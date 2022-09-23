@@ -1,0 +1,98 @@
+ .title {
+    height: 5vh;
+    background-color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    color: black;
+    animation-name: swipe;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+.firstContainer {
+    position: relative;
+    bottom: 18em;
+    border: 0.5em solid red;
+    width: 25%;
+    margin-left: 1%;
+    font-size: 1.5rem;
+}
+
+.insertword {
+    position: relative;
+    bottom: 20rem;
+}
+
+#input {
+    position: relative;
+    bottom: 20em;
+}
+
+@keyframes swipe {
+    0% {
+        background-color: white;
+        margin-left: 0;
+    }
+    50% {
+        background-color: grey;
+        margin-left: 250vh;
+    }
+    100% {
+        background-color: white;
+        color: black;
+        margin-left: 0;
+    }
+}
+
+#showingWord {
+    position: relative;
+    left: 18rem;
+    bottom: 10em;
+    font-size: 5vh;
+}
+
+#hangmanAnim {
+    position: relative;
+    left: 62em;
+    margin-top: 2em;
+}
+
+#insert {
+    position: relative;
+    left: 25em;
+    bottom: 20em;
+}
+
+#nrOfTry {
+    position: relative;
+    bottom: 15em;
+    left: 14em;
+    font-size: 2em;
+}
+
+#winner {
+    position: relative;
+    bottom: 17em;
+    left: 12em;
+    font-size: 2em;
+    color: red;
+    font-style: oblique;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    position: relative;
+    left: 25em;
+    bottom: 12em;
+}
+
+#usedLetter {
+    position: relative;
+    bottom: 9em;
+    left: 20em;
+    color: red;
+    font-size: 2em;
+}

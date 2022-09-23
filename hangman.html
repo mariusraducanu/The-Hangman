@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The hangman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="hangman.css">
+  </head>
+  <body style="background-color: aquamarine;">
+    <div class="title">The Hangman</div>
+    <canvas id="hangmanAnim" width="400px" height="400px"></canvas>
+    <div class="firstContainer">
+        <h2 style="font-size:15px ;">Try to guess the word, choosing letters one by one.</h2>
+        <h3 style="font-size:10px ;">If you don't know how to play this game, click down below and learn how to play.</h3>
+        <a id="link" href="https://ro.wikipedia.org/wiki/Sp%C3%A2nzur%C4%83toare_(joc)">Click here to learn how to play!</a>
+    </div>
+    <div><h3  class="insertword">Insert your word here!</h3></div>
+    <div id="input">
+      <input type="password" id="word" placeholder="Your word">
+      <button type="button" class="btn btn-primary btn-sm" onclick="mySubmit()">Submit</button>
+    </div>
+    <div class="submit">
+    </div>
+    <div id="showingWord"></div>
+    <div id="nrOfTry"></div>
+    <div id="insert">
+      <input type="text" id="letter" placeholder="Insert letter">
+      <button type="button" id="submit" class="btn btn-primary btn-sm" onclick="checkLetters()">Submit</button>
+    </div>
+    <div id="winner"></div>
+    <h4>Used letters</h4>
+    <div id="usedLetter"></div>
+    <script src="hangman.js"></script>
+  </body>
+</html>
