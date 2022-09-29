@@ -7,13 +7,13 @@ let d = document.getElementById("hangmanAnim");
 let ctxd = c.getContext("2d");
 
 function startGame() {
-    ctx.moveTo(50, 50);//asta si urmatorul reprezinta stalpul
+    ctx.moveTo(50, 50);
     ctx.lineTo(50, 390);
-    ctx.moveTo(390, 390); //asta si urmatorul reprezinta baza stalpului
+    ctx.moveTo(390, 390); 
     ctx.lineTo(5, 390);
-    ctx.moveTo(50, 50); //asta si urmatorul reprezinta lemnul de care se atarna sfoara
+    ctx.moveTo(50, 50); 
     ctx.lineTo(190, 50);
-    ctx.moveTo(190, 50); //asta si urmatorul reprezinta sfoara
+    ctx.moveTo(190, 50); 
     ctx.lineTo(190, 100);
     ctx.stroke();
 }
@@ -64,14 +64,14 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.arc(190, 130, 30, 0, 2 * Math.PI); // asta reprezinta capul
+                    ctx.arc(190, 130, 30, 0, 2 * Math.PI);
                     ctx.stroke();
                     break;
                 case 8 :
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(190, 160);//asta si urmatorul reprezinta corpul
+                    ctx.moveTo(190, 160);
                     ctx.lineTo(190, 300);
                     ctx.stroke();
                     break;
@@ -79,7 +79,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(190, 190);//asta si urmatorul reprezinta mana stanga
+                    ctx.moveTo(190, 190);
                     ctx.lineTo(150, 250);
                     ctx.stroke();
                     break;
@@ -87,7 +87,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(190, 190);//asta si urmatorul reprezinta mana dreapta
+                    ctx.moveTo(190, 190);
                     ctx.lineTo(230, 250);
                     ctx.stroke();
                     break;
@@ -95,7 +95,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(220, 370);//asta si urmatorul reprezinta piciorul stang
+                    ctx.moveTo(220, 370);
                     ctx.lineTo(190, 300);
                     ctx.stroke();
                     break;
@@ -103,7 +103,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(160, 370);//asta si urmatorul reprezinta piciorul drept
+                    ctx.moveTo(160, 370);
                     ctx.lineTo(190, 300);
                     ctx.stroke();
                     break;
@@ -111,7 +111,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(170, 125); //asta reprezinta ochiul stang
+                    ctx.moveTo(170, 125);
                     ctx.lineTo(180, 125);
                     ctx.stroke();
                     break;
@@ -119,7 +119,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(210, 125); //asta reprezinta ochiul drept
+                    ctx.moveTo(210, 125);
                     ctx.lineTo(200, 125);
                     ctx.stroke();
                     break;
@@ -127,7 +127,7 @@ function checkLetters() {
                     c = document.getElementById("hangmanAnim");
                     ctx = c.getContext("2d");
                     ctx.beginPath();
-                    ctx.moveTo(190, 135); //asta reprezinta nasul
+                    ctx.moveTo(190, 135);
                     ctx.lineTo(190, 140);
                     ctx.stroke();
                     break;
